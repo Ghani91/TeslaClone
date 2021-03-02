@@ -1,10 +1,10 @@
-import { StyleSheet} from 'react-native';
+import { StyleSheet, Dimensions} from 'react-native';
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: 'yellow',
-        alignItems: 'center',
-        justifyContent: 'center',
+        width:'100%',
+        height:Dimensions.get('screen').height,
+        justifyContent:'center',
+        alignItems:'center',
       },
       logoContainer:{
           width:'100%',
@@ -46,8 +46,10 @@ const styles = StyleSheet.create({
           top:'30%',
       },
       buttonContainer:{
+          position:'absolute',
           width:'100%',
-          padding:5,
+          bottom:50,
+          //padding:5,
     
       },
       buttonStyles:{
@@ -62,6 +64,9 @@ const styles = StyleSheet.create({
           fontSize:18,
           fontWeight:'500',
           textTransform:'uppercase',
+      },
+      subtitleCTA:{
+          textDecorationLine:'underline',
       }
 
     

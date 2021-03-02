@@ -1,12 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './App/assets/Screens/HomeScreen';
+import { StyleSheet, View } from 'react-native';
+import CarsList from './App/assets/Screens/CarsList';
 
 export default function App() {
   return (
-    <HomeScreen
-    />
+    <View style={styles.container}>
+      <CarsList/>
+    </View>
+    
   );
 }
 

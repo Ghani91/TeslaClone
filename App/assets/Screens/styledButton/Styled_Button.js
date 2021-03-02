@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pressable, Text, View } from 'react-native';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
-import styles from './styles';
+import styles from '/home/jaisal-tech/RN-Dev/TeslaClone/App/assets/Screens/carItem/styles.js';
 
 function Styled_Button(props) {
 
@@ -10,7 +10,7 @@ function Styled_Button(props) {
     const textColor=type==='#FFFFFF'?'black':'#171A28';
     const content=props.content;
     return (
-        <View style={styles.buttonContainer}>
+        <View >
 
             <Pressable 
             style={[styles.buttonStyles,{backgroundColor}]}
